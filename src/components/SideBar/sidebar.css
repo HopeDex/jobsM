@@ -9,6 +9,25 @@
     position: relative;
     background-color: rgba(86, 105, 248, 0.356);
     border-radius: 10px;
-    padding: 1rem 1rem;
+    padding: 0.5rem;
     border: 1px solid transparent;
+}
+
+.jobalert h3{
+    font-size: 26px;
+    
+
+}
+.jobalert input {
+    border:none;
+    border-radius: inherit;
+    margin: 10px 0;
+
+}
+
+.aside{
+    padding: 10px;
+}
+.aside ul{
+    list-style: none;
 }

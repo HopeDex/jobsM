@@ -1,13 +1,13 @@
 import React from "react";
 import "./content.css";
 import { BiDotsHorizontalRounded } from "react-icons/bi";
-import { Button, ButtonGroup, FormLabel } from "react-bootstrap";
+import { Button } from "react-bootstrap";
 import logo from "../../images/logooo.png";
 const Content = () => {
   return (
     <div className="maincontent">
-      <p>
-        Showing 20 Jobs <p style={{ float: "right" }}>sort by:</p>
+      <p className="headline">
+        Showing 20 Jobs <p style={{ float: "right" }}>sort by: date posted</p>
       </p>
 
       <div className="grid-container">

@@ -45,3 +45,12 @@
     justify-content: space-between;
     padding: 0 10px;
 }
+.headline{
+    font-size: 24px;
+    font-weight: 500;
+
+}
+.headline p{
+    font-size: 18px;
+    font-weight: 400;
+}
