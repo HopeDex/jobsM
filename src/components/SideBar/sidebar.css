@@ -1,0 +1,14 @@
+.sidecontainer{
+    margin-left: 5%;
+    background-color: inherit;
+    width: 20%;
+    height: 100%;
+    position: fixed;
+}
+.jobalert{
+    position: relative;
+    background-color: rgba(86, 105, 248, 0.356);
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    border: 1px solid transparent;
+}

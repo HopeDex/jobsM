@@ -1,0 +1,47 @@
+.maincontent{
+    background-color: inherit;
+    margin-left: 26%;
+    width: 70%;
+    height: 100%;
+
+}
+.grid-container{
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-items:flex-start;
+}
+.alert{
+    background-color: white;
+    padding: 4px;
+    width: 33%;
+}
+.alert label{
+    color: blue;
+    background-color: rgba(113, 189, 255, 0.497);
+    margin-left: 10px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-align: center;
+    width: 80px;
+}
+.alert img{
+    width: 50px;
+    border-radius: inherit;
+}
+
+.alert h5{
+    font-weight: 900;
+    margin-top:8px;
+}
+.alert p{
+    line-height: normal;
+    font-weight: 300;
+}
+
+.button-wrap{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
