@@ -1,0 +1,30 @@
+
+.main{
+    width: 100%;
+    justify-content: center;
+}
+.search{
+    background-color: inherit;
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+}
+.filter{
+    color:aliceblue;
+    list-style: none;
+    align-items: center;
+    text-align: center;
+    display: flex;
+margin: auto;
+}
+.lists input{
+    height: 38px;
+    margin: 1px;
+    border: none;
+}
+.first{
+    border-radius: 5px;
+}
