@@ -3,6 +3,7 @@ import Feature from "../components/Feature";
 import Hero from "../components/Hero";
 import Nav from "../components/Nav";
 import Platform from "../components/Platform";
+import UploadCV from "../components/UploadCV";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Hero />
       <Platform />
       <Feature />
+      <UploadCV />
     </div>
   );
 };
