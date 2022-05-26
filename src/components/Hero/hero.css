@@ -1,0 +1,36 @@
+.hero{
+    background-image: url('../../images/background.png');
+    background-position: center;
+    text-align: center;
+    align-items: center;
+    height: 500px;
+}
+.hero h1{
+    padding-top: 50px;
+    font-size: 64px;
+}
+.hero h1 span{
+    color: blue;
+    padding-top: 50px;
+    font-size: 64px;
+}
+.hero p{
+    margin-bottom: 50px;;
+}
+.inputsection{
+    padding: 10px;
+    margin: auto;
+    width: 50%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    align-items: center;
+}
+.searchh{
+    list-style: none;
+    margin: auto;
+}
+.list input{
+    height: 38px;
+    border: none;
+}

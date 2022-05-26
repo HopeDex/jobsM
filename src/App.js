@@ -1,15 +1,12 @@
 import React from "react";
-import Content from "./components/Content";
-import Nav from "./components/Nav";
-import SearchBar from "./components/searchBar";
-import SideBar from "./components/SideBar";
+import Home from "./pages/Home";
+import Main from "./pages/Main";
+
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <SearchBar />
-      <SideBar />
-      <Content />
+      <Home />
+      {/* <Main /> */}
     </div>
   );
 }

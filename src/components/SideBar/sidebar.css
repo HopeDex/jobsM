@@ -7,7 +7,7 @@
 }
 .jobalert{
     position: relative;
-    background-color: rgba(86, 105, 248, 0.356);
+    background-color: #E8F2FF;
     border-radius: 10px;
     padding: 0.5rem;
     border: 1px solid transparent;
@@ -30,4 +30,5 @@
 }
 .aside ul{
     list-style: none;
+    padding-left: 0%;
 }
