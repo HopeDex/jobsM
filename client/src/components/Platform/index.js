@@ -1,6 +1,22 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
+import axios from "axios";
 import "./platform.css";
 const Platform = () => {
+  const [counts, setCount] = useState([]);
+  const url = "http://localhost:5000/retrieve/cat";
+
+  useEffect(() => {
+    axios
+      .get(url)
+      .then((res) => {
+        console.log(res);
+        setCount(res.data);
+        console.log(counts);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
   return (
     <div className="wrapper">
       <h1>
@@ -11,35 +27,36 @@ const Platform = () => {
       <div className="cardwrapper">
         <div className="cards">
           <h4>Marketing and communication</h4>
-          <p>56 jobs available</p>
+          <p>{counts[2]} jobs available</p>
         </div>
         <div className="cards">
           <h4>Design and Development</h4>
-          <p>56 jobs available</p>
+          <p> {counts[0]} jobs available</p>
         </div>
         <div className="cards">
           <h4>Human Research and Development</h4>
-          <p>56 jobs available</p>
+          <p>{counts[3]} jobs available</p>
         </div>
         <div className="cards">
           <h4>Finance and Management</h4>
-          <p>56 jobs available</p>
+          <p>{counts[4]} jobs available</p>
         </div>
         <div className="cards">
           <h4>Arm Force Guide and Security</h4>
-          <p>56 jobs available</p>
+          <p>{counts[5]} jobs available</p>
         </div>
         <div className="cards">
           <h4>Business and Consultation</h4>
-          <p>17 jobs available</p>
+          <p>{counts[1]} jobs available</p>
         </div>
         <div className="cards">
           <h4>Customer Support Care Service</h4>
-          <p>32 jobs available</p>
+          <p>{counts[7]} jobs available</p>
         </div>
+
         <div className="cards">
           <h4>Project Management</h4>
-          <p>87 jobs available</p>
+          <p>{counts[6]} jobs available</p>
         </div>
       </div>
     </div>
