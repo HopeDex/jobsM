@@ -1,12 +1,10 @@
 .maincv{
  width: 100%;
- background-color: white;
- height: 550px;
- color: rgb(255, 255, 255);
 
 }
 .cv{
     background-color: rgb(35, 35, 155);
+    color: white;
     border-radius: 50px;
     height: 500px;
     width: 90%;
@@ -26,3 +24,16 @@
     background-color: white;
     color: black;
 }
+@media only screen and (max-width: 768px) {
+    .cv{
+      height: 700px;
+    }
+    .upload{
+        margin: auto;
+    }
+  }
+@media only screen and (max-width: 480px) {
+    .cv{
+        height: 800px;
+    }
+ }

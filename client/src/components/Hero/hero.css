@@ -26,19 +26,35 @@
     border-radius: 10px;
     align-items: center;
 }
-.inputgroup{
-    flex-wrap: nowrap;
-    position: relative;
-    display: flex;
 
-    align-items: stretch;
-    width: 100%;
-}
 .searchh{
     list-style: none;
     margin: auto;
+    
+}
+.input-group{
+    
+    flex-wrap: nowrap !important; 
 }
 .list input{
     height: 38px;
     border: none;
 }
+@media only screen and (max-width: 768px) {
+    .inputsection {
+      width: 90%;
+    }
+  }
+
+@media only screen and (max-width: 480px) {
+     .inputsection {
+      width: 100%;
+      
+    }
+    .input-group{
+        display: block !important;
+    }
+    .list input{
+        border-bottom: 1px solid black;
+    }
+  }

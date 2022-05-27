@@ -25,8 +25,18 @@
     width: 23%;
     padding: 10px;
     margin: 10px;
+
 }
 .cards:hover{
     background-color: blue;
     color: white;
 }
+
+@media only screen and (max-width: 768px) {
+    .wrapper{
+        height: 800px;;
+    }
+    .cards{
+      width: 43%;
+    }
+  }

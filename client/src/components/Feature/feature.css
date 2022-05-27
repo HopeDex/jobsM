@@ -53,3 +53,30 @@
     color: black;
     background-color: rgba(240, 248, 255, 0);
 }
+
+@media only screen and (max-width: 768px) {
+    .feature{
+        height: 1300px;
+    }
+    .job{
+        width: 43%;
+    }
+    .but{
+        width:20%;
+    }
+  }
+  @media only screen and (max-width: 480px) {
+    .feature{
+        height:2400px;
+
+    }
+    .job{
+        width:100%;
+    }
+    .but{
+       width: 40%;
+    }
+    .imagewrap img{
+        width: 100%;
+    }
+ }

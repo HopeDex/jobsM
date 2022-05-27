@@ -7,7 +7,7 @@ const UploadCV = () => {
   return (
     <div className="maincv">
       <div className="cv">
-        <div>
+        <div className="imagewrap">
           <img src={logo} alt="logo" />
         </div>
         <div className="upload">
