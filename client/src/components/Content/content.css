@@ -1,7 +1,7 @@
 .maincontent{
     background-color: inherit;
-    margin-left: 26%;
-    width: 70%;
+    margin-left: 24%;
+    width: 75%;
     height: 100%;
 
 }
@@ -20,11 +20,12 @@
 .alert label{
     color: blue;
     background-color: rgba(113, 189, 255, 0.497);
-    margin-left: 10px;
+    margin-left: auto;
     margin-bottom: 5px;
     border-radius: 5px;
     text-align: center;
-    width: 80px;
+    width: 33%;
+    
 }
 .alert img{
     width: 50px;
@@ -41,9 +42,10 @@
 }
 
 .button-wrap{
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 0 10px;
+    padding: 0;
 }
 .headline{
     font-size: 24px;

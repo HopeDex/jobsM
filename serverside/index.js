@@ -24,7 +24,17 @@ app.get("/retrieve/featured", (req, res) => {
     console.log(result);
   });
 });
-
+//
+app.get("/all", (req, res) => {
+  const sqlget = "SELECT * FROM vacancy";
+  db.query(sqlget, (err, result) => {
+    if (err) {
+      console.log(err);
+    }
+    res.send(result);
+    console.log(result);
+  });
+});
 //retrieving current number of job listsing for each catergory
 app.get("/retrieve/cat", (req, res) => {
   let results = [];

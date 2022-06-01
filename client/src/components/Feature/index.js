@@ -3,11 +3,16 @@ import axios from "axios";
 import "./feature.css";
 import logo from "../../images/logo2.png";
 import { Button } from "react-bootstrap";
+import { useNavigate } from "react-router-dom";
+
 const Feature = () => {
   const [details, setDetails] = useState([]);
-  // let history = useHistory();
+  let navigate = useNavigate();
   const url = "http://localhost:5000/retrieve/featured";
 
+  const meh = () => {
+    navigate("/search", { replace: true });
+  };
   useEffect(() => {
     axios
       .get(url)
@@ -30,27 +35,29 @@ const Feature = () => {
         {details.map((value, key) => {
           return (
             <div className="job">
-              <p>
-                <img src={logo} alt="logo" style={{ width: "50px" }} />{" "}
-                <p style={{ float: "right" }}>
-                  {value.Companyname}
+              <div style={{ display: "flex" }}>
+                <p>
+                  <img src={logo} alt="logo" style={{ width: "50px" }} />{" "}
+                </p>
+                <p>
+                  <strong>{value.Companyname}</strong>
                   <br />
                   {value.Location}
                 </p>
-              </p>
+              </div>
               <h5>{value.Position}</h5>
               <p className="type">{value.type}</p>
               <p className="descr">{value.overview}</p>
-              <label>
-                {value.salary}
+              <div className="apply">
+                <label>{value.salary}</label>
                 <Button>Apply Now</Button>
-              </label>
+              </div>
             </div>
           );
         })}
       </div>
       <div className="but">
-        <Button>Find More Jobs</Button>
+        <Button onClick={meh}>Find More Jobs</Button>
       </div>
     </div>
   );

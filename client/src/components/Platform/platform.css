@@ -1,5 +1,5 @@
 .wrapper{
-    height: 500px;
+    height: 700px;
     text-align: center;
 }
 
@@ -26,6 +26,10 @@
     padding: 10px;
     margin: 10px;
 
+}
+.cards img{
+    height: 50%;
+    width: 50%;
 }
 .cards:hover{
     background-color: blue;

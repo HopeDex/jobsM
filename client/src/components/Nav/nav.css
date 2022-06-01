@@ -29,14 +29,19 @@
     text-align: center;
     display: flex;
 }
-.navlink{
+.navlink {
+    
     display: flex;
     cursor: pointer;
     align-items: center;
     padding: 0 1rem;
 }
+.navlink a{
+    text-decoration: none;
+    color: black;
+}
 
-.navlink:hover{
+.navlink a:hover{
     color: white;
     background-color: blue;
 }

@@ -20,31 +20,46 @@ const SideBar = () => {
           </h6>
           <ul>
             <li>
-              <input type="radio" />
+              <input className="form-check-input" type="checkbox" />
               Full time{" "}
-              <Badge bg-grey style={{ float: "right" }}>
+              <Badge bg="secondary" style={{ float: "right" }}>
                 3
               </Badge>
             </li>
             <li>
-              <input type="radio" />
-              Part time <Badge style={{ float: "right" }}>3</Badge>
+              <input className="form-check-input" type="checkbox" />
+              Part time{" "}
+              <Badge bg="secondary" style={{ float: "right" }}>
+                3
+              </Badge>
             </li>
             <li>
-              <input type="radio" />
-              Remote <Badge style={{ float: "right" }}>3</Badge>
+              <input className="form-check-input" type="checkbox" />
+              Remote{" "}
+              <Badge bg="secondary" style={{ float: "right" }}>
+                3
+              </Badge>
             </li>
             <li>
-              <input type="radio" />
-              Internship <Badge style={{ float: "right" }}>3</Badge>
+              <input className="form-check-input" type="checkbox" />
+              Internship{" "}
+              <Badge bg="secondary" style={{ float: "right" }}>
+                3
+              </Badge>
             </li>
             <li>
-              <input type="radio" />
-              Contract <Badge style={{ float: "right" }}>3</Badge>
+              <input className="form-check-input" type="checkbox" />
+              Contract{" "}
+              <Badge bg="secondary" style={{ float: "right" }}>
+                3
+              </Badge>
             </li>
             <li>
-              <input type="radio" />
-              Training <Badge style={{ float: "right" }}>3</Badge>
+              <input className="form-check-input" type="checkbox" />
+              Training{" "}
+              <Badge bg="secondary" style={{ float: "right" }}>
+                3
+              </Badge>
             </li>
           </ul>
         </div>
@@ -54,20 +69,32 @@ const SideBar = () => {
           </h6>
           <ul>
             <li>
-              <input type="radio" />
-              Senior level <Badge style={{ float: "right" }}>3</Badge>
+              <input className="form-check-input" type="checkbox" />
+              Senior level{" "}
+              <Badge bg="secondary" style={{ float: "right" }}>
+                3
+              </Badge>
             </li>
             <li>
-              <input type="radio" />
-              Entry level <Badge style={{ float: "right" }}>3</Badge>
+              <input className="form-check-input" type="checkbox" />
+              Entry level{" "}
+              <Badge bg="secondary" style={{ float: "right" }}>
+                3
+              </Badge>
             </li>
             <li>
-              <input type="radio" />
-              Mid level <Badge style={{ float: "right" }}>3</Badge>
+              <input className="form-check-input" type="checkbox" />
+              Mid level{" "}
+              <Badge bg="secondary" style={{ float: "right" }}>
+                3
+              </Badge>
             </li>
             <li>
-              <input type="radio" />
-              Directors <Badge style={{ float: "right" }}>3</Badge>
+              <input className="form-check-input" type="checkbox" />
+              Directors{" "}
+              <Badge bg="secondary" style={{ float: "right" }}>
+                3
+              </Badge>
             </li>
           </ul>
         </div>

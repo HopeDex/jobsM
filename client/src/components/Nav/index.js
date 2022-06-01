@@ -1,6 +1,7 @@
 import React from "react";
 import "./nav.css";
 import { BiUser, BiBuilding } from "react-icons/bi";
+import { Link } from "react-router-dom";
 const Nav = () => {
   return (
     <>
@@ -8,8 +9,10 @@ const Nav = () => {
         <div className="navcontainer">
           <ul className="navmenu">
             <li className="navlink">
-              <BiBuilding />
-              TrollZor
+              <Link to="/home">
+                <BiBuilding />
+                TrollZor
+              </Link>
             </li>
           </ul>
           <ul className="navmenu">
@@ -19,8 +22,10 @@ const Nav = () => {
           </ul>{" "}
           <ul className="navmenu">
             <li className="navlink">
-              <BiUser />
-              User
+              <Link to="/user">
+                <BiUser />
+                user
+              </Link>
             </li>
           </ul>
         </div>
