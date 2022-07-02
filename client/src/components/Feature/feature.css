@@ -1,7 +1,6 @@
 .feature{
     background-color: white;
-    height: 750px;
-    
+    height: auto;
     padding-top: 50px;
 }
 .feature h1{
@@ -19,11 +18,11 @@
 }
 .job{
     width: 23%;
-    
+    border: 2px solid rgba(4, 4, 134, 0.26);
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
-    background-color:#FAFAFB;
+    /* background-color:#FAFAFB; */
 }
 .job:hover{
     border: none;
@@ -33,49 +32,61 @@
  background-color: blue;
  color: white;
 }
+.job small{
+    color:rgba(0, 0, 0, 0.507) ;
+    font-weight: 400;
+}
 .apply{
     display: flex;
-    width: 80%;
-    margin: auto;
+    width: 100%;
     justify-content: space-between;
 }
 .apply Button{
-    background-color: rgb(222, 222, 222);
+    background-color: rgba(0, 0, 255, 0.1);
     border: none;
     color:rgb(93, 93, 246);
+    width: 50%;
 }
 .type{
-    font-size: 14px;
+    font-size: 18px;
+    font-weight: 600px;
+    color: rgba(0, 0, 0, 0.392);
 }
 .descr{
     color:grey;
     line-height: 20px;
 }
+.job h5{
+    font-size: 30px;
+}
 .but{
     margin: auto;
-    width: 10%;
+    width: fit-content;
 }
 .but Button{
     color: black;
-    background-color: rgba(240, 248, 255, 0);
+    background-color: rgba(45, 13, 202, 0);
 }
 
-@media only screen and (max-width: 768px) {
-    .feature{
-        height: 1300px;
-    }
+@media only screen and (max-width: 1000px) {
+  
     .job{
-        width: 43%;
+        width: 44% !important; 
     }
     .but{
         width:20%;
     }
   }
-  @media only screen and (max-width: 480px) {
-    .feature{
-        height:2400px;
-
+  @media only screen and (max-width: 1300px) {
+  
+    .job{
+        width: 30%;
     }
+    .but{
+        width:fit-content;
+    }
+  }
+  @media only screen and (max-width: 480px) {
     .job{
         width:100%;
     }

@@ -4,10 +4,14 @@ import "./content.css";
 import { BiDotsHorizontalRounded, BiSortUp } from "react-icons/bi";
 import { Button } from "react-bootstrap";
 import logo2 from "../../images/logo2.png";
+import bg from "../../images/3.jpg";
 import SinglePage from "../SinglePage";
+import { useParams } from "react-router-dom";
 const Content = () => {
+  let { category } = useParams();
   const url = "http://localhost:5000/all";
   const [details, setDetails] = useState([]);
+  console.log(category);
   useEffect(() => {
     axios
       .get(url)

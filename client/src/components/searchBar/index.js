@@ -13,26 +13,24 @@ const SearchBar = () => {
     <div className="main">
       <div className="search">
         <ul className="filter">
-          <InputGroup>
-            <li className="lists">
-              <FaSearch />
-              <input className="first" type="text" placeholder="search"></input>
-            </li>
+          <li className="lists">
+            <FaSearch />
+            <input className="first" type="text" placeholder="search"></input>
+          </li>
 
-            <li className="lists">
-              <FaSearchLocation />
-              <input type="text" placeholder="location" />
-            </li>
-            <li className="lists">
-              <FaBriefcase />
-              <input type="text" placeholder="job type" />
-            </li>
-            <li className="lists">
-              <FaDollarSign />
-              <input type="text" placeholder="salary range" />
-            </li>
-            <Button>Find Job</Button>
-          </InputGroup>
+          <li className="lists">
+            <FaSearchLocation />
+            <input type="text" placeholder="location" />
+          </li>
+          <li className="lists">
+            <FaBriefcase />
+            <input type="text" placeholder="job type" />
+          </li>
+          <li className="lists">
+            <FaDollarSign />
+            <input type="text" placeholder="salary range" />
+          </li>
+          <button>Find Job</button>
         </ul>
       </div>
     </div>

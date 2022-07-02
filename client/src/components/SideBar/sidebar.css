@@ -1,4 +1,5 @@
 .sidecontainer{
+    top: 150px;
     margin-left: 2%;
     background-color: inherit;
     width: 20%;
@@ -32,3 +33,9 @@
     list-style: none;
     padding: 0 5%;
 }
+
+@media only screen and (max-width: 1300px) {
+    .sidecontainer {
+      display: none;
+    }
+  }

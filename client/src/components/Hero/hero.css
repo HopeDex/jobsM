@@ -3,24 +3,32 @@
     background-position: center;
     text-align: center;
     align-items: center;
-    height: 500px;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
+    height: 90vh;
+    display: flex;
+    padding-bottom:15vh;
 }
 .hero h1{
     padding-top: 50px;
-    font-size: 64px;
+    font-size: 6vw;
+    width: 100vw;
 }
 .hero h1 span{
     color: blue;
     padding-top: 50px;
-    font-size: 64px;
+    
 }
 .hero p{
     margin-bottom: 50px;;
+    width: 100vw;
 }
 .inputsection{
     padding: 8px;
     margin: auto;
-    width: 60%;
+    width: 60vw;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     border-radius: 10px;
@@ -42,6 +50,9 @@
     border: none;
 }
 .list:focus-visible{
+    border: 1px solid blue;
+}
+.list input:focus{
     border: 1px solid blue;
 }
 :focus{

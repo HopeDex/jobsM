@@ -1,21 +1,24 @@
 .maincontent{
+    
     background-color: inherit;
     margin-left: 24%;
-    width: 75%;
-    height: 100%;
+    width: 75vw;
+    padding-top: 150px;
+
 
 }
 .grid-container{
     
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     justify-items:flex-start;
 }
 .alert{
+    
     background-color: white;
     padding: 4px;
-    width: 32%;
+    width: 380px;
 }
 .alert label{
     color: blue;
@@ -48,6 +51,7 @@
     padding: 0;
 }
 .headline{
+    top: 300px;
     font-size: 24px;
     font-weight: 500;
 
@@ -56,3 +60,34 @@
     font-size: 18px;
     font-weight: 400;
 }
+
+.single{
+    width:50%;
+    height: 600px;
+    background-color: aqua;
+    position: fixed;
+    z-index: 10;
+    right: 5px;
+    top: 200px;
+    border-radius: 20px;
+
+}
+.bg {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    height: 200px;
+}
+
+.sg{
+    margin-top: -40px;
+    width: 80px;
+    border-radius: inherit;
+    margin-left: 40px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .maincontent {
+      margin: auto;
+      width: 100vw;
+    }
+  }

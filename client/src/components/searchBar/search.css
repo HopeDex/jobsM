@@ -20,21 +20,28 @@
     align-items: center;
     text-align: center;
     display: flex;
-margin: auto;
+    margin: auto;
+    width: inherit;
+    justify-content: center;
 }
 .lists input {
     height: 38px;
     /* margin: 1px; */
-    padding-left: 20%;;
     border: none;
-     width: 265px;
+     width: 90%;
 }
 .lists{
     color:blue;
     background-color: white;
-    border-left: 1px solid;
-    padding-left: 20px;;
+    border-left: 2px solid;
+    /* padding-left: 20px;; */
+    display: flex;
+    align-items: center;
+    width: 20%;
     
+}
+.lists svg{
+    width:10%;
 }
 .first{
     border-radius: 5px;

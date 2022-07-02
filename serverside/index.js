@@ -1,10 +1,21 @@
 const express = require("express");
 const multer = require("multer");
 const cors = require("cors");
-const mysql = require("mysql");
-
+const mysql = require("mysql2");
+const bodyParser = require("body-parser");
+const cookieParser = require("cookie-parser");
 const app = express();
 app.use(cors());
+app.use(
+  cors({
+    origin: ["http://localhost:5000"],
+    methods: ["GET", "POST"],
+    credentials: true,
+  })
+);
+app.use(cookieParser());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 const db = mysql.createPool({
   host: "localhost",
@@ -12,6 +23,7 @@ const db = mysql.createPool({
   password: "",
   database: "jobs",
 });
+
 //retrieving 8 featured jobs
 app.get("/retrieve/featured", (req, res) => {
   console.log("all");
@@ -131,7 +143,32 @@ app.get("/retrieve/cat", (req, res) => {
   });
 });
 /*    DOne DOne DOne      */
+//getting specific category
+app.get("/retrieve/specific/:category", (req, res) => {
+  const category = req.params.id;
+  console.log(category);
+  const sqlget = "SELECT * from vacancy WHERE category=? ";
+  db.query(sqlget, category, (err, result) => {
+    if (err) {
+      console.log(err);
+    }
+    console.log(result);
+    res.send(result);
+  });
+});
 
+app.get("/retrieve/single/:id", (req, res) => {
+  const vid = req.params.id;
+  console.log(req.params.id);
+  const sqlget = "SELECT * from vacancy WHERE vacancyID=?";
+  db.query(sqlget, vid, (err, result) => {
+    if (err) {
+      console.log(err);
+    }
+    console.log(result);
+    res.send(result);
+  });
+});
 app.listen(5000, () => {
   console.log("running on port 5000");
 });

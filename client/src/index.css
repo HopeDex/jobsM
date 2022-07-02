@@ -18,3 +18,11 @@ code {
   background-color: #FAFAFB;
 }
 #root{background-color: #FAFAFB;}
+
+.topHolder{
+  position: fixed;
+  width: 100%;
+  height: 150px;
+  background-color: #FAFAFB;
+  z-index: 777;
+}

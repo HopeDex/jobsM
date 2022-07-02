@@ -21,45 +21,34 @@ const SideBar = () => {
           <ul>
             <li>
               <input className="form-check-input" type="checkbox" />
-              Full time{" "}
-              <Badge bg="secondary" style={{ float: "right" }}>
-                3
-              </Badge>
+              Full time <Badge style={{ float: "right" }}>3</Badge>
             </li>
             <li>
               <input className="form-check-input" type="checkbox" />
-              Part time{" "}
-              <Badge bg="secondary" style={{ float: "right" }}>
-                3
-              </Badge>
+              Part time <Badge style={{ float: "right" }}>3</Badge>
             </li>
             <li>
               <input className="form-check-input" type="checkbox" />
-              Remote{" "}
-              <Badge bg="secondary" style={{ float: "right" }}>
-                3
-              </Badge>
+              Remote <Badge style={{ float: "right" }}>3</Badge>
             </li>
             <li>
               <input className="form-check-input" type="checkbox" />
               Internship{" "}
-              <Badge bg="secondary" style={{ float: "right" }}>
+              <Badge
+                style={{
+                  float: "right",
+                }}
+              >
                 3
               </Badge>
             </li>
             <li>
               <input className="form-check-input" type="checkbox" />
-              Contract{" "}
-              <Badge bg="secondary" style={{ float: "right" }}>
-                3
-              </Badge>
+              Contract <Badge style={{ float: "right" }}>3</Badge>
             </li>
             <li>
               <input className="form-check-input" type="checkbox" />
-              Training{" "}
-              <Badge bg="secondary" style={{ float: "right" }}>
-                3
-              </Badge>
+              Training <Badge style={{ float: "right" }}>3</Badge>
             </li>
           </ul>
         </div>
@@ -70,31 +59,19 @@ const SideBar = () => {
           <ul>
             <li>
               <input className="form-check-input" type="checkbox" />
-              Senior level{" "}
-              <Badge bg="secondary" style={{ float: "right" }}>
-                3
-              </Badge>
+              Senior level <Badge style={{ float: "right" }}>3</Badge>
             </li>
             <li>
               <input className="form-check-input" type="checkbox" />
-              Entry level{" "}
-              <Badge bg="secondary" style={{ float: "right" }}>
-                3
-              </Badge>
+              Entry level <Badge style={{ float: "right" }}>3</Badge>
             </li>
             <li>
               <input className="form-check-input" type="checkbox" />
-              Mid level{" "}
-              <Badge bg="secondary" style={{ float: "right" }}>
-                3
-              </Badge>
+              Mid level <Badge style={{ float: "right" }}>3</Badge>
             </li>
             <li>
               <input className="form-check-input" type="checkbox" />
-              Directors{" "}
-              <Badge bg="secondary" style={{ float: "right" }}>
-                3
-              </Badge>
+              Directors <Badge style={{ float: "right" }}>3</Badge>
             </li>
           </ul>
         </div>

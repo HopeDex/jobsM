@@ -1,24 +1,14 @@
-.navbar{
-    background-color: rgb(255, 255, 255);
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1rem;
-    position: sticky;
-    top: 0%;
-    @media screen and (max-width: 960px) {
-        transition: 0.8s all ease;
-      }
-}
+
 .navcontainer{
     display: flex;
     justify-content: space-between;
-    height: 50px;
-    position: sticky;
+    height: 60px;
+    align-items: center;
     width: 100%;
     max-width: 100%;
-    padding: 0 24px;
+    padding: 0 8vw ;
+    background-color: rgb(255, 255, 255);
+   
     
 }
 
@@ -28,9 +18,11 @@
     align-items: center;
     text-align: center;
     display: flex;
+    position: sticky;
 }
 .navlink {
-    
+    font-size: 16px;
+    font-weight: 500;
     display: flex;
     cursor: pointer;
     align-items: center;

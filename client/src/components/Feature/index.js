@@ -7,12 +7,15 @@ import { useNavigate } from "react-router-dom";
 
 const Feature = () => {
   const [details, setDetails] = useState([]);
+  const [id, setId] = useState();
   let navigate = useNavigate();
   const url = "http://localhost:5000/retrieve/featured";
 
   const meh = () => {
-    navigate("/search", { replace: true });
+    let category = "Customer";
+    navigate("/search", { replace: false });
   };
+
   useEffect(() => {
     axios
       .get(url)
@@ -39,18 +42,25 @@ const Feature = () => {
                 <p>
                   <img src={logo} alt="logo" style={{ width: "50px" }} />{" "}
                 </p>
-                <p>
+                <div style={{ display: "block" }}>
                   <strong>{value.Companyname}</strong>
                   <br />
-                  {value.Location}
-                </p>
+                  <small>{value.Location}</small>
+                </div>
               </div>
               <h5>{value.Position}</h5>
               <p className="type">{value.type}</p>
               <p className="descr">{value.overview}</p>
               <div className="apply">
                 <label>{value.salary}</label>
-                <Button>Apply Now</Button>
+                <Button
+                  onClick={() => {
+                    console.log(value.vacancyID);
+                    navigate(`/single/${value.vacancyID}`);
+                  }}
+                >
+                  Apply Now
+                </Button>
               </div>
             </div>
           );

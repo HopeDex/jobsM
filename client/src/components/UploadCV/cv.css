@@ -1,22 +1,21 @@
 .maincv{
  width: 100%;
+ background-color: white;
 
 }
 .cv{
-    background-color: rgb(35, 35, 155);
+    background-color: rgba(47, 47, 255, 0.832);
     color: white;
     border-radius: 50px;
     height: 500px;
-    width: 90%;
-    margin: 50px auto;
+    width: 80%;
+    margin:  auto;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    justify-items:flex-start;
+    justify-content: center;
     align-items: center;
 }
 .upload{
-    width: 50%;
+    width: 40%;
     
 }
 .upload Button{
