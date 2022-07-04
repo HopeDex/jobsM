@@ -2,12 +2,14 @@ import React, { useState } from "react";
 import { InputGroup, Button } from "react-bootstrap";
 import "./hero.css";
 import { BiSearch, BiCurrentLocation } from "react-icons/bi";
+import { useNavigate } from "react-router-dom";
 const Hero = () => {
   const [search, setSearch] = useState("");
   const [location, setLocation] = useState("");
-
+  const navigate = useNavigate();
   const getSearch = () => {
     console.log(search + " " + location);
+    navigate(`search/${search} ${location}`);
   };
 
   const onSearch = (e) => {

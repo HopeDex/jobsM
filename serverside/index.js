@@ -2,8 +2,11 @@ const express = require("express");
 const multer = require("multer");
 const cors = require("cors");
 const mysql = require("mysql2");
-const bodyParser = require("body-parser");
+// const bodyParser = require("body-parser");
 const cookieParser = require("cookie-parser");
+const axios = require("axios");
+const cheerio = require("cheerio");
+
 const app = express();
 app.use(cors());
 app.use(
@@ -13,6 +16,7 @@ app.use(
     credentials: true,
   })
 );
+
 app.use(cookieParser());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -23,6 +27,25 @@ const db = mysql.createPool({
   password: "",
   database: "jobs",
 });
+
+axios("https://www.malawijob.com/job-vacancies-search-malawi")
+  .then((response) => {
+    const html = response.data;
+    const $ = cheerio.load(html);
+    const articles = [];
+    $(".col-lg-5 col-md-5 col-sm-5 col-xs-12 job-title", html).each(
+      // function () {
+      //   const title = $(this).text();
+      //   const texts = $(this).find("h5").text();
+      //   articles.push({
+      //     title,
+      //     texts,
+      //   });
+      // }
+    );
+    console.log(articles);
+  })
+  .catch((err) => console.log(err));
 
 //retrieving 8 featured jobs
 app.get("/retrieve/featured", (req, res) => {

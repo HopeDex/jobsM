@@ -49,15 +49,12 @@
     height: 38px;
     border: none;
 }
-.list:focus-visible{
-    border: 1px solid blue;
+.list input:focus-visible{
+    outline: none;
 }
-.list input:focus{
-    border: 1px solid blue;
-}
-:focus{
-    border: 1px solid blue;
-}
+
+
+
 @media only screen and (max-width: 768px) {
     .inputsection {
       width: 90%;
